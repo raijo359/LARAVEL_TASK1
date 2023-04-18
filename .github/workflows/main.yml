@@ -34,4 +34,4 @@ jobs:
         run: docker build -t ${{secrets.DOCKER_USER}}/salmasofttask . 
 
       - name: "pushing to docker hub"
-        run: docker push ${{secrets.DOCKER_PASS}}/salmasofttask
+        run: docker push ${{secrets.DOCKER_USER}}/salmasofttask
